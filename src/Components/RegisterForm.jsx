@@ -78,6 +78,7 @@ function RegisterForm() {
     if (isError) {
       return;
     } else {
+      window.localStorage.setItem("userInfo", JSON.stringify(formValues));
       navigate("/info");
     }
   };
